@@ -1,5 +1,5 @@
 {% set name = "symbolfit" %}
-{% set version = "0.0.2" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symbolfit-{{ version }}.tar.gz
-  sha256: 54df18acf9605a5e3afc70f9da8db71a5a4c9b5aea92fa4a03c8a04bad97348d
+  sha256: 6ccb834e38d6b297cc4fa16900baaad2083a077775ac723b428871947fa1744d
 
 build:
   noarch: python
@@ -40,6 +40,9 @@ about:
   summary: Automatic parametric modeling with symbolic regression
   license: MIT
   license_file: LICENSE
+  description: |
+    An API to automate parametric modeling with symbolic regression, originally developed for data analysis in the experimental high-energy physics community, but also applicable beyond.
+  doc_url: https://symbolfit.readthedocs.io
 
 extra:
   recipe-maintainers:
