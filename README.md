@@ -9,6 +9,11 @@ Package license: MIT
 
 Summary: Automatic parametric modeling with symbolic regression
 
+Documentation: https://symbolfit.readthedocs.io
+
+An API to automate parametric modeling with symbolic regression, originally developed for data analysis in the experimental high-energy physics community, but also applicable beyond.
+
+
 Current build status
 ====================
 
