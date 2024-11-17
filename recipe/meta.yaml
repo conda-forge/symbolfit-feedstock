@@ -1,5 +1,5 @@
 {% set name = "symbolfit" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symbolfit-{{ version }}.tar.gz
-  sha256: 180b915e700235d66dceb4246a78959dec06ea4d3d25c700715697cb0ee51f4b
+  sha256: 93d2cf25006010a8511571dba2ac6287922efbe0add4545a9615da188aac71b4
 
 build:
   noarch: python
