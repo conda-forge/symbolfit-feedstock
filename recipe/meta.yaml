@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pysr >=0.16.0,<0.20.0
     - lmfit >=1.2.0,<1.4.0
     - matplotlib-base >=3.8.0,<4.0.0
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/hftsoi/symbolfit
