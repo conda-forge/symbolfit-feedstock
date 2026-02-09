@@ -21,11 +21,11 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pysr >=0.16.0,<0.20.0
-    - lmfit >=1.2.0,<1.4.0
-    - matplotlib-base >=3.8.0,<4.0.0
+    - pysr >=1.5.0,<=1.5.2
+    - lmfit >=1.3.0,<1.4.0
+    - matplotlib-base >=3.10.0,<4.0.0
     - seaborn >=0.13.0,<0.14.0
-    - numpy <2.0.0
+    - numpy >=2.0.0,<2.3.0
 
 test:
   imports:
