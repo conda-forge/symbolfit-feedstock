@@ -1,13 +1,13 @@
 {% set name = "symbolfit" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/symbolfit-{{ version }}.tar.gz
-  sha256: 5f67dff5854535aeb6b632376032ec8483db74f7ac4d2c5273ddc1e81fdbbfe5
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/symbolfit-{{ version }}.tar.gz
+  sha256: e701253351c19887afa2cbd7c536f79aed643f713a3cf09c2b5e7a718cc0f8c0
 
 build:
   noarch: python
